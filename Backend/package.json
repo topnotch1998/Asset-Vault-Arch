@@ -1,0 +1,45 @@
+{
+  "name": "og-backend",
+  "version": "1.0.0",
+  "description": "ordinal genesis backend",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --experimental-specifier-resolution=node --loader ts-node/esm src/app.ts",
+    "dev": "tsx watch src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@noble/hashes": "^1.5.0",
+    "@saturnbtcio/arch-sdk": "^0.0.6",
+    "@scure/btc-signer": "^1.4.0",
+    "arch-typescript-sdk": "^0.0.69",
+    "axios": "^1.7.7",
+    "bip322-js": "^1.1.1",
+    "bitcoinjs-lib": "^6.1.5",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "http": "^0.0.1-security",
+    "micro-ordinals": "^0.1.1",
+    "mongoose": "^8.8.1",
+    "node-cron": "^3.0.3",
+    "path": "^0.12.7",
+    "runelib": "^1.0.7",
+    "tiny-secp256k1": "^2.2.3",
+    "typescript": "^5.6.3",
+    "wif": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/wif": "^2.0.5",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.7.3"
+  }
+}
